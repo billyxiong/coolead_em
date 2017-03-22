@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="coolead_project" thread-count="1">
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+    <test name="test_1" preserve-order="true">
+        <classes>        
+            <class name="com.coolead.test_scripts.Test_Total">   
+            	<methods>
+            		<include name="login"/>
+            		<include name="User_Set"/>
+            		<include name="Add_Org"/>
+            		<include name="Add_User"/>
+            		<include name="Add_Dictionary"/>
+            		<include name="Add_Subject"/>
+            		<include name="Add_Project"/>
+            		<include name="Project_Authority"/>
+            		<include name="Add_Meeting"/>
+            		<include name="Add_Plan"/>
+            		<include name="Add_Task"/>
+            		<include name="Add_Draft"/>
+            		<include name="Add_Report"/>
+            		<include name="Add_Visa"/>
+            		<include name="Reback_Owner_Progress"/>
+            		<include name="Report_Delete"/>
+            		<include name="Doc"/>
+            		<include name="Service_Push"/>
+            		<include name="Task_Search"/>
+            		<include name="Change_Search"/>            		
+            		<include name="Personal_Task"/>
+            	</methods>
+            </class>                    	 	                           
+        </classes>        
+    </test>
+</suite>

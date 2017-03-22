@@ -11,6 +11,7 @@ import com.bindo.modules.Order;
 
 public class Test_Order {
 	WebDriver driver = Driver_select.getDriver();  
+//	WebDriver driver = GetDriver.getRemoteIEDriver();
 	String baseUrl = Constant.url;
 	  @BeforeMethod
 	  public void login() throws Exception{	

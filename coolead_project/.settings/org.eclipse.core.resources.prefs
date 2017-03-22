@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//config/objectMap.properties=UTF-8
+encoding//src/com/coolead=UTF-8
+encoding//src/com/coolead/example/ScreenShot.java=UTF-8
+encoding//src/com/coolead/modules/Add_Dictionary_Subject.java=UTF-8
+encoding//src/com/coolead/page_object/AddMeetingPage.java=UTF-8
+encoding//src/com/coolead/page_object/AddOrganizationPage.java=UTF-8
+encoding//src/com/coolead/util/ObjectMap.java=UTF-8
+encoding/<project>=UTF-8
+encoding/testng.xml=UTF-8

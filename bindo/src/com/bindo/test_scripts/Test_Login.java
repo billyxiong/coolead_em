@@ -11,7 +11,7 @@ import com.bindo.util.GetDriver;
 
 public class Test_Login {
 	WebDriver driver = Driver_select.getDriver();
-
+//	WebDriver driver = GetDriver.getRemoteIEDriver();
 	String baseUrl = Constant.url;	
 	@Test
 	public void test_login() throws Exception{

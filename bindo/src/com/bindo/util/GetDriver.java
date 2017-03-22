@@ -8,13 +8,12 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class GetDriver {
 	public static WebDriver driver;
 	//获取远程节点中IE浏览器对象Driver，通过函数参数remoteNodeUrl连接不同的指定节点
-	public static String remoteNodeUrl="http://192.168.1.233:5555/wd/hub";
 	public static WebDriver getRemoteIEDriver(){
 		DesiredCapabilities capability = DesiredCapabilities.internetExplorer();
 		capability.setBrowserName("internetExplorer");
 		capability.setPlatform(Platform.XP);
 		try {
-			driver = new RemoteWebDriver(new URL(remoteNodeUrl),capability);
+			driver = new RemoteWebDriver(new URL(Constant.remoteNodeUrl),capability);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -27,7 +26,7 @@ public class GetDriver {
 		capability.setBrowserName("chrome");
 		capability.setPlatform(Platform.XP);
 		try {
-			driver = new RemoteWebDriver(new URL(remoteNodeUrl),capability);
+			driver = new RemoteWebDriver(new URL(Constant.remoteNodeUrl),capability);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -40,7 +39,7 @@ public class GetDriver {
 		capability.setBrowserName("firefox");
 		capability.setPlatform(Platform.XP);
 		try {
-			driver = new RemoteWebDriver(new URL(remoteNodeUrl),capability);
+			driver = new RemoteWebDriver(new URL(Constant.remoteNodeUrl),capability);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

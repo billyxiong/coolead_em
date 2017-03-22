@@ -1,0 +1,5 @@
+[2017-03-14 20:15:36,017] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase ------------------开始执行测试---------------
+[2017-03-14 20:15:36,018] INFO  org.webdriver.patatiumwebui.utils.TestBaseCase 读取testng.xml配置的FirefoxDriver浏览器并将其初始化
+
+[2017-03-14 20:15:36,301] INFO  org.webdriver.patatiumwebui.utils.TestListener 测试用例:登录失败用例---start
+[2017-03-14 20:15:36,305] ERROR org.webdriver.patatiumwebui.utils.TestListener 0

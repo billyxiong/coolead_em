@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [coolead_project]">
+  <parameter name="remoteNodeUrl" value="http://192.168.1.233:5555/wd/hub"/>
+  <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="ChromeTest(failed)">
+    <parameter name="remoteNodeUrl" value="http://192.168.1.233:5555/wd/hub"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.coolead.util.TestSeleniumGrid">
+        <methods>
+          <include name="testSearch1"/>
+          <include name="testSearch2"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.coolead.util.TestSeleniumGrid -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [coolead_project] -->

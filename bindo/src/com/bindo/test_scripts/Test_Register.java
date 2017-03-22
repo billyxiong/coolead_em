@@ -11,6 +11,7 @@ import com.bindo.util.Constant;
 import com.bindo.util.GetDriver;
 public class Test_Register {
 	WebDriver driver = Driver_select.getDriver();
+//	WebDriver driver = GetDriver.getRemoteIEDriver();
 	String baseUrl = Constant.url;	
 	@Test
 	public void register() throws Exception{

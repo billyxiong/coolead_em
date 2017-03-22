@@ -10,8 +10,8 @@ import com.bindo.util.Constant;
 import com.bindo.util.GetDriver;
 
 public class Test_Total {
- //  WebDriver driver = Driver_select.getDriver(); 
-	 WebDriver driver = GetDriver.getRemoteChromedriver();
+   WebDriver driver = Driver_select.getDriver(); 
+//	WebDriver driver = GetDriver.getRemoteChromedriver();
 	String baseUrl = Constant.url;
 	@BeforeTest
 	public void open_url() throws Exception{

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="coolead_project" thread-count="1">
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+ </listeners> 
+
+   
+    <test name="ChromeTest" preserve-order="true">	
+    	<parameter name="remoteNodeUrl" value="http://218.17.70.242:5555/wd/hub"/>
+    	<parameter name="browser" value="chrome"/>
+    	<classes>
+    		<class name="com.coolead.util.TestSeleniumGrid"/>
+    	</classes>    
+    </test> 
+ 
+
+</suite>
