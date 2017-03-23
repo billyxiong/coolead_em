@@ -6,7 +6,7 @@ import com.coolead.util.ObjectMap;
 
 public class UserSetPage {
 	private WebElement element = null;
-	private ObjectMap objectMap = new ObjectMap(System.getProperty("user.dir")+"\\config\\objectMap.properties");
+	private ObjectMap objectMap = new ObjectMap(System.getProperty("user.dir")+"/config/objectMap.properties");
 	private WebDriver driver;	
 	public UserSetPage (WebDriver driver){
 		this.driver = driver;

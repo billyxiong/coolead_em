@@ -7,7 +7,7 @@ import com.coolead.util.ObjectMap;
 
 public class AddPlanPage {
 	private WebElement element = null;
-	private ObjectMap objectMap = new ObjectMap(System.getProperty("user.dir")+"\\config\\objectMap.properties");
+	private ObjectMap objectMap = new ObjectMap(System.getProperty("user.dir")+"/config/objectMap.properties");
 	private WebDriver driver;
 	
 	public AddPlanPage(WebDriver driver){

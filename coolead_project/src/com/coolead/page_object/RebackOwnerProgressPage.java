@@ -7,7 +7,7 @@ import com.coolead.util.ObjectMap;
 
 public class RebackOwnerProgressPage {
 	private WebElement element = null;
-	private ObjectMap objectMap = new ObjectMap(System.getProperty("user.dir")+"\\config\\objectMap.properties");
+	private ObjectMap objectMap = new ObjectMap(System.getProperty("user.dir")+"/config/objectMap.properties");
 	private WebDriver driver;
 	
 	public RebackOwnerProgressPage (WebDriver driver){

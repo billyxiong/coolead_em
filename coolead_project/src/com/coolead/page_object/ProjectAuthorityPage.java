@@ -9,7 +9,7 @@ public class ProjectAuthorityPage {
 
 	private WebElement element = null;
 		//指定页面元素定位表达式配置文件的相对文件路径
-	private ObjectMap objectMap = new ObjectMap(System.getProperty("user.dir")+"\\config\\objectMap.properties");
+	private ObjectMap objectMap = new ObjectMap(System.getProperty("user.dir")+"/config/objectMap.properties");
 	private WebDriver driver;
 	public ProjectAuthorityPage(WebDriver driver){
 		this.driver = driver;
