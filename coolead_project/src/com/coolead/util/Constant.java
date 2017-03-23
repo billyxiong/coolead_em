@@ -3,7 +3,8 @@
 public class Constant {
 	//定义测试网站的常量
 	public static final String Url = "http://192.168.1.75:8080/Web/#/login";
-    //public static final String Url = "http://192.168.1.38:8080/coolead/#/login";
+    //定义远程测试结点node连接地址
+	public static final String remoteNodeUrl="http://218.17.70.242:5555/wd/hub";
 	//定义用户名的常量
 	public static final String username = "cooleadadmin";
 	//定义密码常量

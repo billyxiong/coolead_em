@@ -20,13 +20,13 @@ public class TestSeleniumGrid {
 	public void beforeTest(String remoteUrl,String browser) throws MalformedURLException
 	{
 		if(browser.equalsIgnoreCase("firefox")){
-			driver=GetDriver.getRemoteFirefoxdriver(remoteUrl);
+			driver=GetDriver.getRemoteChromedriver();
 		}
 		else if (browser.equalsIgnoreCase("ie")){
-			driver=GetDriver.getRemoteIEDriver(remoteUrl);
+			driver=GetDriver.getRemoteIEDriver();
 		}
 		else if (browser.equalsIgnoreCase("chrome")){
-			driver=GetDriver.getRemoteChromedriver(remoteUrl);
+			driver=GetDriver.getRemoteFirefoxdriver();
 		}
 	}
 	@Test

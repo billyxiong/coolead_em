@@ -8,30 +8,42 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 public class GetDriver {
 	public static WebDriver driver;
 	//获取远程节点中IE浏览器对象Driver，通过函数参数remoteNodeUrl连接不同的指定节点
-	public static WebDriver getRemoteIEDriver(String remoteNodeUrl) throws 
-	MalformedURLException{
+	public static WebDriver getRemoteIEDriver(){
 		DesiredCapabilities capability = DesiredCapabilities.internetExplorer();
 		capability.setBrowserName("internetExplorer");
 		capability.setPlatform(Platform.XP);
-		driver = new RemoteWebDriver(new URL(remoteNodeUrl),capability);
+		try {
+			driver = new RemoteWebDriver(new URL(Constant.remoteNodeUrl),capability);
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return driver;
 	}
 	//获取远程节点机器中的Chrome浏览器对象Driver,通过函数参数remoteNodeUrl连接不同节点
-	public static WebDriver getRemoteChromedriver(String remoteNodeUrl) throws 
-	MalformedURLException{
+	public static WebDriver getRemoteChromedriver() {
 		DesiredCapabilities capability = DesiredCapabilities.chrome();
 		capability.setBrowserName("chrome");
 		capability.setPlatform(Platform.XP);
-		driver = new RemoteWebDriver(new URL(remoteNodeUrl),capability);
+		try {
+			driver = new RemoteWebDriver(new URL(Constant.remoteNodeUrl),capability);
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return driver;		
 	}
 	//获取远程节点机器中的firefox浏览器对象Driver,通过函数参数remoteNodeUrl连接不同节点
-	public static WebDriver getRemoteFirefoxdriver(String remoteNodeUrl) throws 
-	MalformedURLException{
+	public static WebDriver getRemoteFirefoxdriver() {
 		DesiredCapabilities capability = DesiredCapabilities.firefox();
 		capability.setBrowserName("firefox");
 		capability.setPlatform(Platform.XP);
-		driver = new RemoteWebDriver(new URL(remoteNodeUrl),capability);
-		return driver;		
+		try {
+			driver = new RemoteWebDriver(new URL(Constant.remoteNodeUrl),capability);
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return driver;			
 	}	
 }

@@ -5,9 +5,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.coolead.modules.*;
 import com.coolead.util.Constant;
+import com.coolead.util.GetDriver;
 
 public class Test_Total {
-	WebDriver driver = Driver_select.getDriver();  
+	//本地执行
+//	WebDriver driver = Driver_select.getDriver();  
+	//分布式执行
+	WebDriver driver = GetDriver.getRemoteChromedriver();
 	String baseUrl = Constant.Url;
 	  @BeforeMethod
 	  public void login() throws Exception{
